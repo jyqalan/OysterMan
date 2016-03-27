@@ -1,0 +1,67 @@
+@comment Parameter 'csl' file from 2010 assessment
+
+@print
+parameters False
+unused_parameters True
+population_section True
+requests True
+results True
+initial_state True
+state_annually True
+state_every_step False
+final_state True
+estimation_section True
+fits True
+resids True
+pearson_resids True
+normalised_resids True
+covariance False
+yields True
+fits_every_eval False
+objective_every_eval False
+parameters_every_eval False
+parameter_vector_every_eval False
+
+@quantities
+all_free_parameters True
+fishing_pressures True
+nuisance_qs True
+true_YCS True
+B0 True
+R0 True
+SSBs True
+YCS True
+actual_catches False
+fits True
+normalised_resids True
+pearson_resids True
+ogive_parameters selectivity[FishingSel].all selectivity[RDSel].all 
+
+
+@catch_split 0 1 0 0 0
+
+@MCY_CAY
+do_MCY True
+MCY_guess 500
+n_discard 100
+n_keep 100
+n_simulations 100
+do_CAY True
+F_CAY_guess 0.2
+interactive False
+
+
+@abundance RecruitBiomass
+biomass true
+step 1
+proportion_mortality 0.0
+ogive RecruitSized
+years 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012
+
+@selectivity_at FishingSelExample
+ogive FishingSel
+years 2000 2009
+step 1
+proportion_mortality 0
+sexed False
+mature_only False

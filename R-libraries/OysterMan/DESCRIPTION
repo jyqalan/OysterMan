@@ -1,0 +1,12 @@
+Package: OysterMan
+Title: Oyster  management strategy evaluations (Project CF113457)
+Version: 0.1
+Date: 2011-04-01
+Author: Dan Fu
+Description: Software for Oyster  management strategy evaluations (Project CF113457).
+Maintainer: Dan Fu <d.fu@niwa.cri.nz>
+Depends: R (>= 2.10.0)
+License: Not for distribution outside NIWA (c) NIWA 2011.
+URL: http://www.niwa.co.nz
+Copyright: National Institute of Water & Atmospheric Research (NIWA).
+Collate: GenericFunctions.R Ogive.R Ogive_logistic.R Ogive_constant.R Selectivity.R Maturity.R Natural_mortality.R Growth.R Growth_basic.R Growth_exponential.R Growth_inverse_logistic.R Mean_weight.R Size_based_mean_weight.R Stock_recruit.R Ricker.R Beverton_Holt.R Partition.R State.R
